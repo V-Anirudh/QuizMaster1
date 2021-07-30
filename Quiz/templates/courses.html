@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+       <header class="nav center">
+        <p class="logo">Quiz Master</p>
+
+        <nav>
+            <ol class="center">
+                <a href="#About"><li>About</li></a>
+                <a href="/courses"><li>Courses</li></a>
+
+                <a href="templates/login_signup"><li>Login/Signup</li></a>
+             </ol>
+
+        </nav>
+
+    </header>
+    <div class="courses">
+      <h1>Courses</h1>
+      <div class="container">
+        <div class="content">
+          <i class="fa fa-android" aria-hidden="true"></i>
+          <h2>PYTHON</h2>
+          <p>Android development is a software creation process that focuses on applications,
+            better known as apps, that are compatible with devices running the Android operating system (OS).
+             Because Android is an open-source project.
+          </p>
+            <a href="templates/PythonQuiz">Click here to attempt Quiz</a>
+
+
+
+        </div>
+        <div class="content">
+          <i class="fa fa-database" aria-hidden="true"></i>
+
+          <h2> Core Java</h2>
+          <p>Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured
+             and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains.
+          </p>
+
+             <a href="/JavaQuiz"><li>Click here to attempt the quiz</li></a>
+
+
+
+        </div>
+        <div class="content">
+          <i class="fa fa-picture-o" aria-hidden="true"></i>
+          <h2>C#.NET</h2>
+          <p>Photography is the art, practice or occupation of taking pictures with a camera. ... The art or process of capturing images, either on light-sensitive film or
+            electronically in digital form, from which viewable pictures can be produced.
+          </p>
+           <a href="/JavaScriptQuiz"><li>Click here to attempt the quiz</li></a>
+
+
+        </div>
+        <div class="content">
+          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+          <h2>Cloud Computing</h2>
+          <p>Cloud computing is the on-demand availability of computer system resources,
+            especially data storage and computing power, without direct active
+          management by the user. The term is generally used to describe data centers available to many users over the Internet
+          </p>
+          <a href="/CloudQuiz"><li>Click here to attempt the quiz</li></a>
+
+
+        </div>
+        <div class="content">
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <h2>Data Structures</h2>
+          <p>In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values,
+            the relationships among them, and the functions or operations that can be applied to the data.
+          </p>
+           <a href="/DataStructuresQuiz"><li>Click here to attempt the quiz</li></a>
+
+
+        </div>
+        <div class="content">
+          <i class="fa fa-amazon" aria-hidden="true"></i>
+          <h2>Amazon Web services</h2>
+          <p>Amazon Web Services is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to
+             individuals, companies, and governments, on a metered pay-as-you-go basis.These cloud computing web services provide a variety of basic abstract technical infrastructure
+          </p>
+          <button class="btn">ENROLL NOW</button>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+		<footer class="footer">
+			<p class="footer_title">Quiz Master</p>
+			<div class="footer_social">
+				<a href="#" class="footer_icon">
+					<i class="bx bxl-facebook"></i>
+				</a>
+				<a href="#" class="footer_icon">
+					<i class="bx bxl-instagram"></i>
+				</a>
+				<a href="#" class="footer_icon">
+					<i class="bx bxl-twitter"></i>
+				</a>
+			</div>
+			<p>&#169; 2021 all copyrights reserved</p>
+		</footer>
+
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='CourseStyle.css') }}">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+
+{% endblock %}

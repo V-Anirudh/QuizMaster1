@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block content %}
+
+       <header class="nav center">
+        <p class="logo">Quiz Master</p>
+
+        <nav>
+            <ol class="center">
+                <a href="#About"><li>About</li></a>
+                <a href="/courses"><li>Courses</li></a>
+                <a href="/login_signup"><li>Login</li></a>
+                <a href="/signup"><li>Signup</li></a>
+             </ol>
+
+        </nav>
+
+    </header>
+
+    <!-- Projects -->
+    <div class="projects center" id="Projects">
+        <h3>Courses</h3>
+        <div class="container">
+            <a href="/courses">
+                <div>PYTHON</div>
+            </a>
+            <a href="/courses">
+               <div>JAVA SCRIPT</div>
+            </a>
+            <a href="/courses">
+               <div>C#.NET</div>
+            </a>
+            <a href="/courses">
+                <div>CORE JAVA</div></a>
+        </div>
+    </div>
+<!-- Contact -->
+    <div class="contact center" id="Contact">
+        <h3>Contact</h3>
+        <form action="" class="center">
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="email" name="" id="" placeholder="Email-id">
+            <textarea name="" id="" cols="30" rows="10" ></textarea>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+
+    <!--footer-->
+		<footer class="footer">
+			<p class="footer_title">Quiz Master</p>
+			<div class="footer_social">
+				<a href="#" class="footer_icon">
+					<i class="bx bxl-facebook"></i>
+				</a>
+				<a href="#" class="footer_icon">
+					<i class="bx bxl-instagram"></i>
+				</a>
+				<a href="#" class="footer_icon">
+					<i class="bx bxl-twitter"></i>
+				</a>
+			</div>
+			<p>&#169; 2021 all copyrights reserved</p>
+		</footer>
+
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+
+
+
+{% endblock %}

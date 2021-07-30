@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+
+   <div class="container" id="container">
+  	<div class="form-container sign-up-container">
+  		<form action="/" method="post">
+  			<h1>Create Account</h1>
+  			<div class="social-container">
+  				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+  				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+  				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+  			</div>
+  			<span>or use your email for registration</span>
+  			<input type="text" name="fname" placeholder="Name" />
+  			<input type="email" name="email" placeholder="Email" />
+  			<input type="password" name="pass" placeholder="Password" />
+  			<button>Sign Up</button>
+  		</form>
+  	</div>
+  	<div class="form-container log-in-container">
+  		<form action="/" method="POST">
+  			<h1>Login in</h1>
+  			<div class="social-container">
+  				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+  				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+  				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+  			</div>
+  			<span>or use your account</span>
+  			<input type="email" name="emailid" placeholder="Email" />
+  			<input type="password" name="pwd" placeholder="Password" />
+  			<a href="#">Forgot your password?</a>
+  			<button>Log In</button>
+  		</form>
+  	</div>
+  	<div class="overlay-container">
+  		<div class="overlay">
+  			<div class="overlay-panel overlay-left">
+  				<h1>Welcome Back!</h1>
+  				<p>To keep connected with us please login with your personal info</p>
+  				<button class="ghost" id="logIn">Log In</button>
+  			</div>
+  			<div class="overlay-panel overlay-right">
+  				<h1>Hello, Developers!</h1>
+  				<p>Enter your personal details and start journey with us</p>
+  				<button class="ghost" id="signUp">Sign Up</button>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='login_singup_style.css') }}">
+
+<script src="static/js/script.js"></script>
+{% endblock %}
+
+
+
+
+
